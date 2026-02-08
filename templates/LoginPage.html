@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="stylesheet" href="{% static 'css/LoginPage.css' %}">
+        
+         
+        <title>LoginPage</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 style="font-family: 'Trebuchet MS', sans-serif;">GeoSpatial Data View</h1>
+        </div>
+
+        <div class="leftsection">
+            <!-- <img src="Loginpagesideimage-icon.jpg" alt="" class="Loginpagesideimage-icon"> -->
+            <img src="{% static 'img/LoginpageBackground_icon.jpg' %}" alt="" class="LoginpageBackground_icon">
+            
+        </div>
+        <div class="rightsection">
+            
+
+            <form action="">
+                 
+                <div class="loginform">
+                    <div class="inputs">
+                        <h1>Login</h1>
+                        
+                    <label for="name">User Name / Email</label>
+                    <input type="text" id="unameInput"  name="uname" required><br>
+
+                    <label for="name">Password</label><br>
+                    <input type="password" id="unamepwd" placeholder="" name="uname" required><br>
+                    </div>
+                    <br>
+                    <div class="line"></div><br>
+                    <button type="button" id="homeButton">Apply</button>
+                    <div class="text">
+                    
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <script src="{% static 'js/Logincheck.js' %}"></script>
+    </body>
+</html>

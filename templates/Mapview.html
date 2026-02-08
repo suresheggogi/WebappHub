@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8" />
+         <meta name="viewport" content="initial-scale=1, width=device-width" />
+         <link rel="stylesheet" href="{% static 'css\Mapview.css' %}">
+         
+         <!-- Leaflet shpjs libraries -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/shpjs@latest/dist/shp.min.js"></script> 
+          
+        
+        
+               
+    </head>
+   
+    
+    <body>
+        <div class="container">
+
+           <div class="slidelist">
+                <div class="navilist">
+
+                    <a href="#"><img src="{% static 'img/layers.svg' %}"  alt="noimg"  class="logoicon">Projects</a><br>
+                    <a href="#"><img src="{% static 'img/Mapview_icon.png' %}" alt="noimg" class="logoicon">Google Maap</a><br>
+                    <a href="#"><img src="{% static 'img/Processig_icon.png' %}" alt="noimg" class="logoicon">Bing Map</a><br>
+                    <a href="#"><img src="{% static 'img/Settings_icon.png' %}" alt="noimg" class="logoicon">Settings</a><br>
+                  
+                </div>
+            </div> 
+
+            <div class="mapviewer">
+                <div id="mapid" > </div> 
+                 <input type="file" id="inputfile" accept=".zip" />
+                 
+            </div>
+           
+ 
+
+            <div class="sliderbar" id="sildebar1">
+              <a href="javascript:void(0)" onclick="closebtn()" class="btn">&times;</a>
+               
+            </div>
+
+            <div class="rightbar">
+                 <div class="drawingcontrolers">
+                    <a href="#"><img src="{% static 'img/man-user.svg' %}"alt="noimg" class="logoicon2"></a><br>
+                    <a href="#"><img src="{% static 'img/pencil-edit-button.svg' %}"alt="noimg" class="logoicon2"></a><br>
+                    <a href="#"><img src="{% static 'img/polyline.svg' %}"alt="noimg" class="logoicon2"></a><br>
+                    <a href="#"><img src="{% static 'img/ruler.svg' %}"alt="noimg" class="logoicon2"></a><br>
+                 </div>
+
+            </div>  
+               
+        </div>
+      
+     <script src="{% static 'js/mapscript.js' %}"></script>
+     
+      
+    </body>
+    
+</html>
