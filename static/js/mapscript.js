@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var map = L.map("mapid").setView([17.3993, 78.49059], 13);
+    var map = L.map("mapid").setView([17.3993, 78.49059], 15);
 
     //  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     //     maxZoom: 19
     // }).addTo(map);
 
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 20,
+        maxZoom: 22,
         attribution: 'Tiles © Esri'
     }).addTo(map);
 
