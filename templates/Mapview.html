@@ -27,7 +27,7 @@
                     <a href="#"><img src="{% static 'img/layers.svg' %}"  alt="noimg"  class="logoicon">Projects</a><br>
                     <a href="#"><img src="{% static 'img/Mapview_icon.png' %}" alt="noimg" class="logoicon">Google Maap</a><br>
                     <a href="#"><img src="{% static 'img/Processig_icon.png' %}" alt="noimg" class="logoicon">Bing Map</a><br>
-                    <a href="#"><img src="{% static 'img/Settings_icon.png' %}" alt="noimg" class="logoicon">Settings</a><br>
+                    <a href="#"><img src="{% static 'img/Settings_icon.png' %}" alt="noimg" class="logoicon">Settings</a><br> 
                   
                 </div>
             </div> 
@@ -41,7 +41,16 @@
  
 
             <div class="sliderbar" id="sildebar1">
-              <a href="javascript:void(0)" onclick="closebtn()" class="btn">&times;</a>
+                <div class="lablebox">
+                    </label><input type="checkbox" name = "Chkbox" class="checkboxbtn">Show Map </br>
+                    </label><input type="checkbox" name = "Chkbox" class="checkboxbtn" >Show Image</br>
+                    </label><input type="checkbox" name = "Chkbox" class="checkboxbtn" >Show Labels</br>
+                    
+
+                </div>
+                <a href="javascript:void(0)" onclick="closebtn()" class="btn" style="width: 300px;"></a>
+                
+              
                
             </div>
 

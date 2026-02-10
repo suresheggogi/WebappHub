@@ -71,9 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function openbtn(){
    const sidestyle = document.getElementById("sildebar1");
-//    const sdd = document.getElementsByClassName("sliderbar");
-   sidestyle.style.display = "block";
+    sidestyle.style.display = "block";
 }
-function closebtn(){sliderbar
-    document.getElementById("sildebar1").style.width = 0;
-}
+// function closebtn(){
+    
+//     document.getElementById("sildebar1").style.width = "0";
+    
+// }
