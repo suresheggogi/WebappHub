@@ -45,7 +45,7 @@
     border: 1px solid black;
     margin: 10%;
     margin-left: 55%;
-    background-color: rgb(77, 79, 80);
+    background-color:FFFFFF;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 3px rgba(175, 68, 130, 0.411);
     z-index: 60000;
@@ -75,10 +75,6 @@
     width: 150px;
     height: 150px;
 }
-
-
-
-
 
 label{
     font-size: large;
@@ -113,7 +109,7 @@ button{
     width: 100px;
     height: 25px;
     border-radius: 5px;
-    background-color: rgb(137, 144, 141);
+    background-color: rgb(206, 212, 210);
     color: rgb(64, 18, 138);
     font-size: small;
 }
