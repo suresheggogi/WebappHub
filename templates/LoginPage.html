@@ -12,39 +12,58 @@
     </head>
     <body>
         <div class="header">
-            <h1 style="font-family: 'Trebuchet MS', sans-serif;"> Telangan GIS-HUB </h1>
-        </div>
+            <div class="hd1">
+                <img src="{% static 'img/Telanganalogo.png' %}" alt="" class="tglogo">
 
-        <div class="leftsection">
-            <!-- <img src="Loginpagesideimage-icon.jpg" alt="" class="Loginpagesideimage-icon"> -->
-            <img src="{% static 'img/LoginpageBackground_icon.jpg' %}" alt="" class="LoginpageBackground_icon">
+            </div>
+            <div class="hd2">
+                <h1 style="font-family: 'Trebuchet MS', sans-serif;"> Director of Town & County Planning Telanga </h1>
+          </div>
             
         </div>
-        <div class="rightsection">
+
+        <div class="Container">
+
+            <div class="leftbar">
+
+                <img src="{% static 'img/tg-logo-min.png' %}" alt="" class="leftbar-icon">
+
+
+            </div>
+
+            <div class="rightbar">
+
+                <!-- <img src="{% static 'img/BAckgorund_img.png' %}" alt="" class="LoginpageBackground_icon"> -->
+               <form action="">
+                    <div class="loginform">
+
+                        <div class="inputs">
+                            <h1>Login</h1>
+
+                            <label for="name">User Name / Email</label>
+                            <input type="text" id="unameInput"  name="uname" required><br>
+                            <label for="name">Password</label><br>
+                            <input type="password" id="unamepwd" placeholder="" name="uname" required><br>
+
+                        </div>
+                        <br>
+
+                        <div class="line"></div><br>
+
+                        <button type="button" id="homeButton">Apply</button>
+
+                        <div class="text"></div>
+
+                    </div>    
+
+                </form>
+
+            </div>
+       
             
-
-            <form action="">
-                 
-                <div class="loginform">
-                    <div class="inputs">
-                        <h1>Login</h1>
-                        
-                    <label for="name">User Name / Email</label>
-                    <input type="text" id="unameInput"  name="uname" required><br>
-
-                    <label for="name">Password</label><br>
-                    <input type="password" id="unamepwd" placeholder="" name="uname" required><br>
-                    </div>
-                    <br>
-                    <div class="line"></div><br>
-                    <button type="button" id="homeButton">Apply</button>
-                    <div class="text">
+        </div>
                     
-                    </div>
-                </div>
-
-            </form>
-        </div>
-        <script src="{% static 'js/Logincheck.js' %}"></script>
+    </div>
+    <script src="{% static 'js/Logincheck.js' %}"></script>
     </body>
 </html>
